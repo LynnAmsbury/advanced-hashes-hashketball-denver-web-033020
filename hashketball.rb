@@ -204,7 +204,6 @@ def big_shoe_rebounds
         rebound_number = player_hash[:rebounds]
       end
     end
-
   end
   #Remember to think about return values here.
   return rebound_number
