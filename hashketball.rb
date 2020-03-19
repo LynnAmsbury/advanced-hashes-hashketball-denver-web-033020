@@ -147,8 +147,8 @@ def team_colors(team_name)
 end
 
 def team_names
-  game_hash.map do |key, value| #key = :home or :away; value = team hash
-    value[:team_name] #the name of the team
+  game_hash.map do |place, team| #place = :home or :away; team = team hash
+    team[:team_name] #the name of the team
     # binding.pry
   end
 
