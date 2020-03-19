@@ -164,5 +164,22 @@ def player_numbers(team_names)
 end
 
 def player_stats(player_name)
-
+game_hash.each do |home_away, keys|
+    keys[:players].each do |player|
+      if player[:player_name] == player_name
+        return player.delete_if { |stat, value| [:player_name].include?(stat)}
+      end
+    end
+  end
 end
+
+player_stats("Alan Anderson")
+  => { :number => 0,
+        :shoe => 16,
+        :points => 22,
+        :rebounds => 12,
+        :assists => 12,
+        :steals => 3,
+        :blocks => 1,
+        :slam_dunks => 1
+      }
