@@ -169,7 +169,6 @@ game_hash.each do |home_away, keys|
       if player[:player_name] == player_n
         return player.delete_if { |stat, value| [:player_name].include?(stat)}
         binding.pry
-
       end
     end
   end
