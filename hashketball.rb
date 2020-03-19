@@ -128,4 +128,3 @@ def num_points_scored(name)
       binding.pry
     end
   end
-end
