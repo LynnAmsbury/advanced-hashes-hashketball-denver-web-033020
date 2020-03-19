@@ -119,7 +119,7 @@ end
 
 def num_points_scored(player_name)
   game_hash.each do |place, team| #Place = :home or :away; team = team hash
-      team[:players].each do |single_player| # single_player is the player stat hash
+      team[:players].each do |single_player| #single_player is the player stat hash
         if player_name == single_player[:player_name]
           return single_player[:points]
         end
@@ -129,9 +129,10 @@ def num_points_scored(player_name)
 
   def shoe_size(player_name)
     game_hash.each do |place, team| #Place = :home or :away; team = team hash
-        team[:players].each do |single_player| # single_player is the player stat HASH
-          if player_name == single_player[:shoe]
-            return single_player[:points]
+        team[:players].each do |single_player| #single_player is the player stat HASH
+          if player_name == single_player[:player_name] #If the name we pass in matches the player 
+                                                        #name in the current hash
+            return single_player[:shoe]
           end
         end
       end
