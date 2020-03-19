@@ -151,3 +151,7 @@ def team_names
     team[:team_name] #the name of the team
   end
 end
+
+def player_numbers
+
+end
