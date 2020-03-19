@@ -165,7 +165,7 @@ end
 
 def player_stats(player_n)
 game_hash.each do |home_away, keys| #home_away = :home or :away; keys = :team_name, :colors, or :players
-    keys[:players].each do |single_player|
+    keys[:players].each do |single_player| #keys[:players] is an ARRAY
       if single_player[:player_name] == player_n
         return single_player.delete_if { |stat, value| [:player_name].include?(stat)}
       end
