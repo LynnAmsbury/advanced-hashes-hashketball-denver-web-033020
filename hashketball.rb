@@ -136,6 +136,7 @@ end
   game_hash.each do |place, team|
     binding.pry
     team.each do |players, data|
+      binding.pry
       if players == :players
         data.each do |player|
           if player[:player_name] == player_name
