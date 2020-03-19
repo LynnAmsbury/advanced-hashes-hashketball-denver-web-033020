@@ -124,8 +124,7 @@ def num_points_scored(player_name)
       team[:players].each do |single_player| # single_player is the player stat hash
         if player_name == single_player[:player_name]
           return single_player[:points]
-        # binding.pry
+        end
       end
-      # binding.pry
     end
   end
