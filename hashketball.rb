@@ -118,7 +118,7 @@ def game_hash
 end
 
 def num_points_scored(name)
-  game_hash.each do |place, team|
+  game_hash.each do |place, team| #Place = :home or :away; team = team hash
     # binding.pry
     team.each do |players, data|
       binding.pry
