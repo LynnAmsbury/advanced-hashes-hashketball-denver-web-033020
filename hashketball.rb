@@ -124,7 +124,7 @@ def num_points_scored(name)
     players_array = team[:players]
       players_array.each do |points|
         points.each do |k, v|
-
+          binding.pry
         end
         binding.pry
       end
