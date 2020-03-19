@@ -156,8 +156,8 @@ def player_numbers(team_names)
   game_hash.each do |home_away, team_hash| #home_away = :home or :away; team_hash = team hash
     if team_hash[:team_name] == team_names
       return team_hash[:players].map do |single_player| #team_hash[:players] = :players ARRAY;
-                                                 #single_player = individual player HASH
-        player[:number]
+                                                        #single_player = individual player HASH
+        single_player[:number]
         binding.pry
       end
     end
