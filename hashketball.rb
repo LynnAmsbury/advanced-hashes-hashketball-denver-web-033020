@@ -118,8 +118,8 @@ def game_hash
 end
 
 def num_points_scored(player_name)
-  game_hash.each do |place, team| #place = :home or :away; team = team hash
-      team[:players].each do |single_player| #single_player is the player stat hash
+  game_hash.each do |home_away, team_hash| #home_away = :home or :away; team_hash = team hash
+      team_hash[:players].each do |single_player| #single_player is the player stat hash
         if player_name == single_player[:player_name]
         return single_player[:points]
       end
