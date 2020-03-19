@@ -140,11 +140,8 @@ def num_points_scored(player_name)
 
     def team_colors(team_name)
       game_hash.each do |place, team| #place = :home or :away; team = team hash
-          team[:players].each do |single_player| #single_player is the player stat HASH
-            if player_name == single_player[:player_name] #If the name we pass in matches the player
-                                                          #name in the current hash
-              return single_player[:shoe]
-            end
-          end
+        if team[:team_name] == team_name
+          return team[:colors]
         end
       end
+    end
