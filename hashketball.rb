@@ -141,7 +141,7 @@ end
 def team_colors(team_name)
   game_hash.each do |home_away, team_hash| #home_away = :home or :away; team_hash = team hash
     if team_hash[:team_name] == team_name
-      return team_hash[:colors] #team[:colors] is an ARRAY of the colors
+      return team_hash[:colors] #team_hash[:colors] is an ARRAY of the colors
     end
   end
 end
