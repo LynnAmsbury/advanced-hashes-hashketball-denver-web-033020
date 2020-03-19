@@ -197,7 +197,7 @@ def big_shoe_rebounds
   biggest_shoe = 0
   rebound_number = 0
   game_hash.each do |home_away, team_hash|
-    team_hash[:players].each do |player_hash| #iterates over the array to get each individual player
+    team_hash[:players].each do |player_hash| #.each iterates over the :players array to get each individual player
       binding.pry
     end
   end
