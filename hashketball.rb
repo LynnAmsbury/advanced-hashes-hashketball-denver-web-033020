@@ -201,7 +201,7 @@ def big_shoe_rebounds
       if player_hash[:shoe] > biggest_shoe
         biggest_shoe = player_hash[:shoe]
         rebound_number = player_hash[:rebounds]
-      binding.pry
+      return rebound_number
     end
   end
   #Then, return that player's number of rebounds
