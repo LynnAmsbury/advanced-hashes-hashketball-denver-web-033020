@@ -138,13 +138,13 @@ def num_points_scored(player_name)
       end
     end
 
-    def team_colors(team_name)
-      game_hash.each do |place, team| #place = :home or :away; team = team hash
-        if team[:team_name] == team_name
-          return team[:colors] #team[:colors] is an ARRAY of the colors
-        end
-      end
+def team_colors(team_name)
+  game_hash.each do |place, team| #place = :home or :away; team = team hash
+    if team[:team_name] == team_name
+      return team[:colors] #team[:colors] is an ARRAY of the colors
     end
+  end
+end
 
 def team_names
   game_hash.map do |key, value| #key = :home or :away; value = team hash
