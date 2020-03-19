@@ -147,7 +147,7 @@ def num_points_scored(player_name)
     end
 
 def team_names
-  game_hash.map do |place, team| #place = :home or :away;
+  game_hash.map do |key, value| #place = :home or :away;
     value[:team_name]
     binding.pry
   end
