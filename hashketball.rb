@@ -139,16 +139,16 @@ def shoe_size(player_name)
 end
 
 def team_colors(team_name)
-  game_hash.each do |place, team| #place = :home or :away; team = team hash
-    if team[:team_name] == team_name
-      return team[:colors] #team[:colors] is an ARRAY of the colors
+  game_hash.each do |home_away, team_hash| #home_away = :home or :away; team_hash = team hash
+    if team_hash[:team_name] == team_name
+      return team_hash[:colors] #team[:colors] is an ARRAY of the colors
     end
   end
 end
 
 def team_names
-  game_hash.map do |place, team| #place = :home or :away; team = team hash
-    team[:team_name] #the name of the team
+  game_hash.map do |home_away, team_hash| #home_away = :home or :away; team_hash = team hash
+    team_hash[:team_name] #the name of the team
   end
 end
 
