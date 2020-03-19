@@ -118,5 +118,10 @@ def game_hash
 end
 
 def num_points_scored
-
+ game_hash[:home] # Gets us to array of players
+ player_points = 0
+ i = 0
+ while i < players.length do
+   players[i][:points]
+ end
 end
