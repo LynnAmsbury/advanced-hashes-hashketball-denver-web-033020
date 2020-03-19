@@ -158,7 +158,6 @@ def player_numbers(team_names)
       return team_hash[:players].map do |single_player| #team_hash[:players] = :players ARRAY;
                                                         #single_player = individual player HASH
         single_player[:number]
-        # binding.pry
       end
     end
   end
