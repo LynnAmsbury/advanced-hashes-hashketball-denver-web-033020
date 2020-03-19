@@ -154,10 +154,10 @@ end
 
 def player_numbers(team_names)
   game_hash.each do |home_away, value|
-    if value[:team_name] == team_n
-      binding.pry
+    if value[:team_name] == team_names
       return value[:players].map do |player|
         player[:number]
+        binding.pry
       end
     end
   end
