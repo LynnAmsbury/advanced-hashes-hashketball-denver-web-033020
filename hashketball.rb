@@ -133,7 +133,7 @@ end
 #   end
 
   def num_points_scored(player_name) # Place = :home or :away; team = whole team hash
-  game_hash.each do |place, team|
+  game_hash.each do |place, team_hash|
     team.each do |players, value| # Players = :team_name; value = "team name"
       binding.pry
       if players == :players
