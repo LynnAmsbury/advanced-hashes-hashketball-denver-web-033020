@@ -199,7 +199,7 @@ def big_shoe_rebounds
   game_hash.each do |home_away, team_hash|
     team_hash[:players].each do |player_hash| #iterates over the array to get each individual player
       binding.pry
-    end 
+    end
   end
   #Then, return that player's number of rebounds
   #Remember to think about return values here.
