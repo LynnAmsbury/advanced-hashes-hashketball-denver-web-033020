@@ -165,7 +165,7 @@ end
 
 def player_stats(player_n)
 game_hash.each do |home_away, keys| #home_away = :home or :away; keys = :team_name, :colors, or :players
-    keys[:players].each do |single_player| #keys[:players] is an ARRAY
+    keys[:players].each do |single_player| #keys[:players] is an ARRAY; single_player is a one-player HASH
       if single_player[:player_name] == player_n #If the name we pass in matches the player
                                                  #name in the current hash
         return single_player.delete_if do |stat, value|
@@ -177,6 +177,11 @@ game_hash.each do |home_away, keys| #home_away = :home or :away; keys = :team_na
   end
 end
 
+#delete_if for hashes:
+# h = { "a" => 100, "b" => 200, "c" => 300 }
+# h.delete_if {|key, value| key >= "b" }   #=> {"a"=>100}
+
+# Result:
 # player_stats("Alan Anderson")
 #   => { :number => 0,
 #         :shoe => 16,
