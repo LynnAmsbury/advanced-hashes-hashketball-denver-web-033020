@@ -117,32 +117,19 @@ def game_hash
   }
 end
 
-# def num_points_scored(name)
-#   binding.pry
-#   game_hash.each do |place, team| #Place = :home or :away; team = team hash
-#     binding.pry
-#     players_array = team[:players]
-#       players_array.each do |points|
-#         points.each do |k, v|
-#           binding.pry
-#         end
-#         binding.pry
-#       end
-#       binding.pry
-#     end
-#   end
-
-  def num_points_scored(player_name) # Place = :home or :away; team = whole team hash
-  game_hash.each do |place, team_hash|
-    team.each do |players, value| # Players = :team_name; value = "team name"
-      binding.pry
-      if players == :players
-        data.each do |player|
-          if player[:player_name] == player_name
-            return player[:points]
-          end
+def num_points_scored(name)
+  binding.pry
+  game_hash.each do |place, team| #Place = :home or :away; team = team hash
+    binding.pry
+    players_array = team[:players]
+      players_array.each do |points|
+        points.each do |k, v|
+          binding.pry
         end
+        binding.pry
       end
+      binding.pry
     end
   end
-end
+
+  
