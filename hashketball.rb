@@ -139,9 +139,9 @@ end
         data.each do |player|
           if player[:player_name] == player_name
             return player[:points]
-          end  
+          end
         end
-      end   
-    end 
-  end 
+      end
+    end
+  end
 end
