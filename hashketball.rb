@@ -141,8 +141,8 @@ def num_points_scored(player_name)
     def team_colors(team_name)
       game_hash.each do |place, team| #place = :home or :away; team = team hash
         if team[:team_name] == team_name
-            # binding.pry
-          return team[:colors].stringify
+            binding.pry
+          team[:colors]
         end
       end
     end
