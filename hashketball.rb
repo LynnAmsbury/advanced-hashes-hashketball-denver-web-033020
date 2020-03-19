@@ -148,7 +148,7 @@ def num_points_scored(player_name)
 
 def team_names
   game_hash.map do |key, value| #key = :home or :away; value = team hash
-    value[:team_name]
+    value[:team_name] #the name of the team
     binding.pry
   end
 
