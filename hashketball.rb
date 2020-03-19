@@ -168,7 +168,7 @@ game_hash.each do |home_away, keys| #home_away = :home or :away; keys = :team_na
     keys[:players].each do |single_player| #keys[:players] is an ARRAY; single_player is a one-player HASH
       if single_player[:player_name] == player_n #If the name we pass in matches the player
                                                  #name in the current hash
-        return single_player.delete_if do |key_stat, value|
+        return single_player.delete_if do |key_stat, value| #key_stat = :player_name; value = the player's name
           [:player_name].include?(key_stat)
           binding.pry
         end
