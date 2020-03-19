@@ -6,7 +6,7 @@ def game_hash
     :team_name => "Brooklyn Nets",
     :colors => ["black", "white"],
     :players => [
-          {:player_name => "Jeff Adrien",
+          {:player_name => "Alan Anderson",
          :number => 0,
          :shoe => 0,
          :points => 0,
@@ -16,7 +16,7 @@ def game_hash
          :blocks => 0,
          :slam_dunks =>0
          },
-         {:player_name => "Bismack Biyombo",
+         {:player_name => "Reggie Evans",
         :number => 0,
         :shoe => 0,
         :points => 0,
@@ -26,7 +26,7 @@ def game_hash
         :blocks => 0,
         :slam_dunks =>0
         },
-        {:player_name => "DiSagna Diop",
+        {:player_name => "Brook Lopez",
          :number => 0,
          :shoe => 0,
          :points => 0,
@@ -36,7 +36,7 @@ def game_hash
          :blocks => 0,
          :slam_dunks =>0
        },
-       {:player_name => "Ben Gordon",
+       {:player_name => "Mason Plumlee",
         :number => 0,
         :shoe => 0,
         :points => 0,
@@ -46,7 +46,7 @@ def game_hash
         :blocks => 0,
         :slam_dunks =>0
         },
-        {:player_name => "Kemba Walker",
+        {:player_name => "Jason Terry",
          :number => 0,
          :shoe => 0,
          :points => 0,
